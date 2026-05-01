@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { Github, ExternalLink, Menu, X, MessageSquare, Download } from 'lucide-react';
+import { Github, Menu, X, MessageSquare, Download } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/src/lib/utils';
 import { Triquetra } from './Logo';
@@ -36,13 +36,6 @@ export const Navbar = ({ onLogoClick }: NavbarProps) => {
               {link.name}
             </a>
           ))}
-          <a
-            href="https://github.com/XeTrinityz/ThatSkyMod/releases/latest/download/ThatSkyApp.exe"
-            className="hidden flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white text-black hover:bg-slate-200 transition-all text-sm font-bold shadow-[0_0_20px_rgba(255,255,255,0.2)]"
-          >
-            <Download className="w-4 h-4" />
-            Download
-          </a>
           <a
             href="https://discord.gg/V38VvAa2PP"
             target="_blank"
@@ -89,13 +82,6 @@ export const Navbar = ({ onLogoClick }: NavbarProps) => {
               {link.name}
             </a>
           ))}
-          <a
-            href="https://github.com/XeTrinityz/ThatSkyMod/releases/latest/download/ThatSkyApp.exe"
-            className="hidden flex items-center justify-center gap-2 px-4 py-4 rounded-xl bg-white text-black text-sm font-bold shadow-lg"
-          >
-            <Download className="w-4 h-4" />
-            Download XeTrinityz
-          </a>
           <a
             href="https://discord.gg/V38VvAa2PP"
             target="_blank"

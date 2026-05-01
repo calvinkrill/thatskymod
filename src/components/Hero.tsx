@@ -1,5 +1,5 @@
 import { motion } from 'motion/react';
-import { ArrowRight, Sparkles, Shield, Rocket, Eye, Wind, Download, Github } from 'lucide-react';
+import { Sparkles, Shield, Rocket, Eye, Wind, Download, Github } from 'lucide-react';
 import { usePWAInstall } from '../hooks/usePWAInstall';
 
 export const Hero = () => {

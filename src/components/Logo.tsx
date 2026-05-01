@@ -24,12 +24,12 @@ export const Logo = ({ className }: { className?: string }) => {
 };
 
 export const Triquetra = ({ size = 100, className = "" }: { size?: number, className?: string }) => (
-  <div style={{ width: size, height: size }} className={cn("relative flex items-center justify-center bg-zinc-900 rounded-full border border-white/5 overflow-hidden", className)}>
-    <div className="absolute inset-0 bg-gradient-to-br from-orange-600/20 to-transparent" />
+  <div className={cn("logo-mark-size rounded-full", className)} style={{ width: size, height: size }}>
+    <div className="logo-mark-gradient" />
     <img
       src="https://cdn.builder.io/api/v1/image/assets%2F9c74866fcfb14f7fbf68c14610585366%2F6e87708706a3432aa7b6eb52851d3a90?format=webp&width=800&height=1200"
       alt="Logo"
-      className="w-full h-full rounded-full object-cover"
+      className="logo-mark-image"
     />
   </div>
 );
