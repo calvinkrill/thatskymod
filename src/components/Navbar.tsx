@@ -3,6 +3,7 @@ import { Github, Menu, X, MessageSquare, Download } from 'lucide-react';
 import { useState } from 'react';
 import { cn } from '@/src/lib/utils';
 import { Triquetra } from './Logo';
+import { DesktopStatus } from './DesktopStatus';
 
 interface NavbarProps {
   onLogoClick?: () => void;
@@ -26,7 +27,7 @@ export const Navbar = ({ onLogoClick }: NavbarProps) => {
         </button>
 
         {/* Desktop Links */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden md:flex items-center gap-4">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -36,6 +37,8 @@ export const Navbar = ({ onLogoClick }: NavbarProps) => {
               {link.name}
             </a>
           ))}
+          <div className="w-px h-6 bg-white/10" />
+          <DesktopStatus />
           <a
             href="https://discord.gg/V38VvAa2PP"
             target="_blank"
@@ -82,6 +85,9 @@ export const Navbar = ({ onLogoClick }: NavbarProps) => {
               {link.name}
             </a>
           ))}
+          <div className="py-2 border-t border-white/10">
+            <DesktopStatus />
+          </div>
           <a
             href="https://discord.gg/V38VvAa2PP"
             target="_blank"
