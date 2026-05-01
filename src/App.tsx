@@ -38,7 +38,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen selection:bg-sky-500/30 selection:text-sky-200 bg-[#030712]">
+    <div className="min-h-screen selection:bg-sky-500/30 selection:text-sky-200 bg-[#030712] overflow-hidden">
       <AnimatePresence mode="wait">
         {stage === 'caution' && (
           <CautionScreen key="caution" onAccept={handleCautionAccept} />

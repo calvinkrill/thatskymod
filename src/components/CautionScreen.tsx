@@ -7,9 +7,9 @@ export const CautionScreen = ({ onAccept, key }: { onAccept: () => void; key?: s
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[110] flex items-center justify-center bg-[#030712] px-6"
+      className="fixed inset-0 z-[110] flex items-center justify-center bg-[#030712] px-6 overflow-hidden"
     >
-      <div className="absolute inset-0 atmosphere opacity-30" />
+      <div className="absolute inset-0 atmosphere opacity-30 pointer-events-none" />
       
       <motion.div
         initial={{ scale: 0.9, opacity: 0 }}
