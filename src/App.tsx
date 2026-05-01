@@ -14,8 +14,8 @@ export default function App() {
   const [stage, setStage] = useState<'initial' | 'caution' | 'splash' | 'main'>('initial');
 
   useEffect(() => {
-    // Check if flow has been complete in this session
-    const hasFinishedFlow = sessionStorage.getItem('tsm_flow_complete');
+    // Check if flow has been complete
+    const hasFinishedFlow = localStorage.getItem('tsm_flow_complete');
     if (hasFinishedFlow) {
       setStage('main');
     } else {
@@ -28,12 +28,12 @@ export default function App() {
   };
 
   const handleSplashComplete = () => {
-    sessionStorage.setItem('tsm_flow_complete', 'true');
+    localStorage.setItem('tsm_flow_complete', 'true');
     setStage('main');
   };
 
   const handleLogoClick = () => {
-    sessionStorage.removeItem('tsm_flow_complete');
+    localStorage.removeItem('tsm_flow_complete');
     setStage('caution');
   };
 
