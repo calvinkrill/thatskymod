@@ -27,11 +27,11 @@ export const SplashScreen = ({ onComplete, key }: { onComplete: () => void; key?
           <div className="absolute inset-0 atmosphere opacity-50" />
           
           <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            className="relative flex flex-col items-center"
-          >
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          className="relative z-10 flex flex-col items-center"
+        >
             {/* Logo Mark */}
             <div className="relative w-32 h-32 mb-8">
               <motion.div 
