@@ -32,7 +32,7 @@ export const Contributors = () => {
       />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {contributors.map((member, idx) => (
+        {contributors.map((member) => (
           <div key={member.name} className="flex flex-col items-center text-center p-8 bg-white/[0.02] border border-white/5 rounded-[2rem] hover:bg-white/[0.04] transition-colors">
             <div className="w-20 h-20 rounded-full bg-gradient-to-br from-sky-500/20 to-sky-600/20 flex items-center justify-center mb-6 shadow-2xl">
               <member.icon className="w-10 h-10 text-sky-400" />

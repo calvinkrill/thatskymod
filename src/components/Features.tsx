@@ -1,53 +1,44 @@
 import { motion } from 'motion/react';
 import { Section, SectionTitle } from './Section';
-import { 
-  Lock, 
-  Wind, 
-  MapPin, 
-  Eye, 
-  Music, 
-  Code,
+import {
+  Lock,
+  Wind,
+  Eye,
+  Music,
   Zap,
   ShieldCheck
 } from 'lucide-react';
-import { cn } from '@/src/lib/utils';
 
 const features = [
   {
     title: "Complete Player Freedom",
     description: "Empowers you with extensive control over your gameplay experience, from invincibility to teleportation.",
-    icon: Lock,
-    accent: "sky"
+    icon: Lock
   },
   {
     title: "Combat & Survival",
     description: "Advanced movement options and invincibility let you explore without limitations or fear of hazards.",
-    icon: ShieldCheck,
-    accent: "blue"
+    icon: ShieldCheck
   },
   {
     title: "Visual & Exploration",
     description: "Dye ESP and other visual aids help you navigate and discover content more efficiently.",
-    icon: Eye,
-    accent: "indigo"
+    icon: Eye
   },
   {
     title: "Environment Control",
     description: "Adjust wind, rain, sun position, and other environmental elements to create your perfect ambiance.",
-    icon: Wind,
-    accent: "cyan"
+    icon: Wind
   },
   {
     title: "Automation Features",
     description: "Automated music playing and time-saving functions reduce grinding and let you focus on the fun.",
-    icon: Music,
-    accent: "purple"
+    icon: Music
   },
   {
     title: "User-Friendly Interface",
     description: "Designed for easy access and configuration, making all features readily available for everyone.",
-    icon: Zap,
-    accent: "emerald"
+    icon: Zap
   }
 ];
 
@@ -60,7 +51,7 @@ export const Features = () => {
       />
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {features.map((feature, idx) => (
+        {features.map((feature) => (
           <motion.div
             key={feature.title}
             whileHover={{ y: -5 }}
